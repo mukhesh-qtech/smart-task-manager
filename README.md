@@ -6,7 +6,7 @@ This system provides a simple dashboard where users can track their tasks, prior
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
 Access the deployed application here:
 
@@ -14,7 +14,7 @@ http://smarttaskmanager.infinityfreeapp.com
 
 ---
 
-## 📌 Features
+## Features
 
 ### User Authentication
 - Student registration
