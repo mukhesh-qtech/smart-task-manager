@@ -1,81 +1,259 @@
-# Smart Academic Task Manager
+Smart Academic Task Manager
 
-A web-based application designed to help students efficiently manage academic tasks, assignments, and deadlines.
+A modern PHP + MySQL web application designed to help students manage assignments, deadlines, and academic tasks efficiently.
 
-This system provides a simple dashboard where users can track their tasks, prioritize urgent deadlines, and monitor progress.
+The system includes task tracking, smart deadline detection, analytics dashboard, activity logging, and an interactive calendar scheduler.
 
----
-
-## Live Demo
-
-Access the deployed application here:
-
-http://smarttaskmanager.infinityfreeapp.com
+Built with PHP, MySQL, JavaScript, and Tailwind CSS, this project demonstrates a complete full-stack CRUD productivity application.
 
 ---
 
-## Features
+Features
 
-### User Authentication
-- Student registration
-- Secure login system
-- Session-based authentication
-- Logout functionality
+Authentication System
 
-### Task Management
-Users can:
-- Add new tasks
-- Edit existing tasks
-- Delete tasks
+- Secure user registration
+- Password hashing using PHP "password_hash"
+- Login and logout with session management
+
+Task Management
+
+- Create tasks with course, deadline, and priority
+- Edit tasks using modal interface
 - Mark tasks as completed
+- Delete tasks instantly using AJAX
 
-### Smart Priority System
-Tasks are automatically categorized based on deadline urgency:
+Smart Deadline System
 
-| Deadline Condition | Priority |
-|-------------------|---------|
-| ≤ 1 day | Urgent |
-| ≤ 3 days | Upcoming |
-| > 3 days | Normal |
+Automatically categorizes tasks based on deadline:
 
-Urgent tasks are highlighted for quick identification.
+- Overdue
+- Urgent (≤ 1 day)
+- Upcoming (≤ 3 days)
+- Normal
 
-### Dashboard Overview
+Dashboard Analytics
+
 The dashboard displays:
+
 - Total tasks
 - Completed tasks
 - Pending tasks
 - Urgent tasks
+- Task completion progress bar
 
-### Activity Feed
-Recent task activity is shown including:
-- Task creation
-- Task completion
-- Task deletion
+Activity Feed
 
-### Deadline Warning
-If a task deadline passes, the system shows a warning indicator.
+Logs all user actions:
 
-### Responsive UI
-The interface is designed using Tailwind CSS to provide a clean and responsive layout.
+- Task created
+- Task updated
+- Task completed
+- Task deleted
+
+Calendar Scheduling
+
+Interactive calendar built using FullCalendar.
+
+Features include:
+
+- Monthly task view
+- Drag-and-drop scheduling
+- Automatic deadline updates
+
+Task Filters & Search
+
+Filter tasks by:
+
+- All
+- Pending
+- Completed
+- Urgent
+
+Search tasks by title.
+
+Guided Website Tour
+
+Interactive onboarding built with Intro.js to help new users understand the interface.
 
 ---
 
-## 🛠 Tech Stack
+Tech Stack
 
-**Backend**
-- PHP
+Frontend
 
-**Database**
-- MySQL (managed using phpMyAdmin)
-
-**Frontend**
 - HTML
-- JavaScript
-
-**Styling**
 - Tailwind CSS
+- JavaScript
+- AJAX
 
-**Hosting**
-- InfinityFree
+Backend
 
+- PHP
+- MySQL
+
+Libraries
+
+- FullCalendar
+- Intro.js
+
+Development Environment
+
+- XAMPP
+- phpMyAdmin
+
+---
+
+Project Structure
+
+smart-task-manager
+
+config/
+    database.php
+
+auth/
+    login.php
+    register.php
+    logout.php
+
+tasks/
+    add_task.php
+    update_task.php
+    delete_task.php
+    complete_task.php
+
+includes/
+    auth_check.php
+
+dashboard.php
+tasks.php
+calendar.php
+index.php
+
+---
+
+Database Schema
+
+Database name:
+
+taskmanager
+
+students
+
+id
+name
+email
+password
+
+tasks
+
+id
+student_id
+title
+course
+deadline
+priority
+status
+
+activities
+
+id
+student_id
+message
+created_at
+
+---
+
+Installation
+
+1 Install XAMPP
+
+Download from:
+
+https://www.apachefriends.org
+
+Start:
+
+- Apache
+- MySQL
+
+---
+
+2 Clone Repository
+
+git clone https://github.com/yourusername/smart-academic-task-manager.git
+
+Move the project to:
+
+xampp/htdocs/
+
+---
+
+3 Create Database
+
+Open:
+
+http://localhost/phpmyadmin
+
+Create database:
+
+taskmanager
+
+Import the SQL tables.
+
+---
+
+4 Configure Database
+
+Edit:
+
+config/database.php
+
+Example configuration:
+
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "taskmanager";
+
+---
+
+5 Run Project
+
+Open:
+
+http://localhost/smart-task-manager
+
+---
+
+Future Improvements
+
+Possible enhancements include:
+
+- Real-time dashboard updates
+- Task analytics charts
+- Mobile responsiveness improvements
+- Notifications for upcoming deadlines
+
+---
+
+License
+
+This project is released under the MIT License.
+
+---
+
+Author
+
+Created by Mukhesh
+
+---
+
+Project Purpose
+
+This project demonstrates:
+
+- Full-stack PHP development
+- Database design and integration
+- AJAX-based UI interactions
+- Interactive dashboard and task management system
