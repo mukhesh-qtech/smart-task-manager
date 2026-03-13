@@ -10,7 +10,7 @@ This system provides a simple dashboard where users can track their tasks, prior
 
 Access the deployed application here:
 
-http://smarttaskmanager.infinityfreeapp.com/auth/login.php
+http://smarttaskmanager.infinityfreeapp.com
 
 ---
 
