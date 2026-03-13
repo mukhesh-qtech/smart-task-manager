@@ -72,9 +72,6 @@ Filter tasks by:
 
 Search tasks by title.
 
-Guided Website Tour
-
-Interactive onboarding built with Intro.js to help new users understand the interface.
 
 ---
 
