@@ -1,0 +1,5 @@
+<?php
+
+echo "SMART ACADEMIC TASK MANAGER";
+
+?>
