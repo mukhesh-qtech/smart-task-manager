@@ -1,108 +1,62 @@
-Smart Academic Task Manager
-
-A modern PHP + MySQL web application designed to help students manage assignments, deadlines, and academic tasks efficiently.
-
-The system includes task tracking, smart deadline detection, analytics dashboard, activity logging, and an interactive calendar scheduler.
-
-Built with PHP, MySQL, JavaScript, and Tailwind CSS, this project demonstrates a complete full-stack CRUD productivity application.
-
----
-
-Features
-
-Authentication System
-
-- Secure user registration
-- Password hashing using PHP "password_hash"
-- Login and logout with session management
-
-Task Management
-
-- Create tasks with course, deadline, and priority
-- Edit tasks using modal interface
-- Mark tasks as completed
-- Delete tasks instantly using AJAX
-
-Smart Deadline System
-
-Automatically categorizes tasks based on deadline:
-
-- Overdue
-- Urgent (≤ 1 day)
-- Upcoming (≤ 3 days)
-- Normal
-
-Dashboard Analytics
-
-The dashboard displays:
-
-- Total tasks
-- Completed tasks
-- Pending tasks
-- Urgent tasks
-- Task completion progress bar
-
-Activity Feed
-
-Logs all user actions:
-
-- Task created
-- Task updated
-- Task completed
-- Task deleted
-
-Calendar Scheduling
-
-Interactive calendar built using FullCalendar.
-
-Features include:
-
-- Monthly task view
-- Drag-and-drop scheduling
-- Automatic deadline updates
-
-Task Filters & Search
-
-Filter tasks by:
-
-- All
-- Pending
-- Completed
-- Urgent
-
-Search tasks by title.
-
-
----
-
-Tech Stack
-
-Frontend
-
-- HTML
-- Tailwind CSS
-- JavaScript
-- AJAX
-
-Backend
-
-- PHP
-- MySQL
-
-Libraries
-
-- FullCalendar
-- Intro.js
-
-Development Environment
-
-- XAMPP
-- phpMyAdmin
-
----
-
-Project Structure
-
+<h1 align="center">Smart Academic Task Manager</h1><p align="center">
+A modern <b>PHP + MySQL web application</b> designed to help students manage assignments, deadlines, and academic tasks efficiently.
+</p><p align="center">
+Built with <b>PHP, MySQL, JavaScript, and Tailwind CSS</b>.
+</p><hr><h2>Project Overview</h2><p>
+Smart Academic Task Manager is a full-stack productivity web application that allows students to track academic tasks, manage deadlines, and monitor progress through a modern dashboard interface.
+</p><p>
+The system includes task management, analytics dashboard, activity tracking, and an interactive calendar scheduler.
+</p><hr><h2>Features</h2><h3>Authentication System</h3><ul>
+<li>Secure user registration</li>
+<li>Password hashing using PHP <code>password_hash</code></li>
+<li>Login and logout with session management</li>
+</ul><h3>Task Management</h3><ul>
+<li>Create tasks with course, deadline, and priority</li>
+<li>Edit tasks using modal interface</li>
+<li>Mark tasks as completed</li>
+<li>Delete tasks instantly using AJAX</li>
+</ul><h3>Smart Deadline System</h3><p>Tasks are automatically categorized based on deadlines:</p><ul>
+<li>Overdue</li>
+<li>Urgent (≤ 1 day)</li>
+<li>Upcoming (≤ 3 days)</li>
+<li>Normal</li>
+</ul><h3>Dashboard Analytics</h3><ul>
+<li>Total tasks</li>
+<li>Completed tasks</li>
+<li>Pending tasks</li>
+<li>Urgent tasks</li>
+<li>Task completion progress bar</li>
+</ul><h3>Activity Feed</h3><p>The system logs important user actions:</p><ul>
+<li>Task created</li>
+<li>Task updated</li>
+<li>Task completed</li>
+<li>Task deleted</li>
+</ul><h3>Calendar Scheduling</h3><p>
+Interactive calendar built using <b>FullCalendar</b>.
+</p><ul>
+<li>Monthly task view</li>
+<li>Drag-and-drop scheduling</li>
+<li>Automatic deadline updates</li>
+</ul><h3>Task Filters & Search</h3><ul>
+<li>Filter tasks by status (All / Pending / Completed / Urgent)</li>
+<li>Search tasks by title</li>
+</ul><h3>Guided Website Tour</h3><p>
+An interactive onboarding guide built with <b>Intro.js</b> helps new users understand the interface.
+</p><hr><h2>Tech Stack</h2><h3>Frontend</h3><ul>
+<li>HTML</li>
+<li>Tailwind CSS</li>
+<li>JavaScript</li>
+<li>AJAX</li>
+</ul><h3>Backend</h3><ul>
+<li>PHP</li>
+<li>MySQL</li>
+</ul><h3>Libraries</h3><ul>
+<li>FullCalendar</li>
+<li>Intro.js</li>
+</ul><h3>Development Environment</h3><ul>
+<li>XAMPP</li>
+<li>phpMyAdmin</li>
+</ul><hr><h2>Project Structure</h2><pre>
 smart-task-manager
 
 config/
@@ -126,24 +80,12 @@ dashboard.php
 tasks.php
 calendar.php
 index.php
-
----
-
-Database Schema
-
-Database name:
-
-taskmanager
-
-students
-
+</pre><hr><h2>Database Schema</h2><p><b>Database name:</b></p><pre>taskmanager</pre><h3>students</h3><pre>
 id
 name
 email
 password
-
-tasks
-
+</pre><h3>tasks</h3><pre>
 id
 student_id
 title
@@ -151,106 +93,43 @@ course
 deadline
 priority
 status
-
-activities
-
+</pre><h3>activities</h3><pre>
 id
 student_id
 message
 created_at
-
----
-
-Installation
-
-1 Install XAMPP
-
-Download from:
-
-https://www.apachefriends.org
-
-Start:
-
-- Apache
-- MySQL
-
----
-
-2 Clone Repository
-
+</pre><hr><h2>Installation</h2><h3>1 Install XAMPP</h3><p>Download from:</p><p>https://www.apachefriends.org</p><p>Start the following services:</p><ul>
+<li>Apache</li>
+<li>MySQL</li>
+</ul><h3>2 Clone Repository</h3><pre>
 git clone https://github.com/yourusername/smart-academic-task-manager.git
-
-Move the project to:
-
+</pre><p>Move the project to:</p><pre>
 xampp/htdocs/
-
----
-
-3 Create Database
-
-Open:
-
+</pre><h3>3 Create Database</h3><p>Open:</p><pre>
 http://localhost/phpmyadmin
-
-Create database:
-
+</pre><p>Create database:</p><pre>
 taskmanager
-
-Import the SQL tables.
-
----
-
-4 Configure Database
-
-Edit:
-
+</pre><p>Import the SQL tables.</p><h3>4 Configure Database</h3><p>Edit:</p><pre>
 config/database.php
-
-Example configuration:
-
+</pre><p>Example configuration:</p><pre>
 $host = "localhost";
 $user = "root";
 $password = "";
 $database = "taskmanager";
-
----
-
-5 Run Project
-
-Open:
-
+</pre><h3>5 Run Project</h3><pre>
 http://localhost/smart-task-manager
-
----
-
-Future Improvements
-
-Possible enhancements include:
-
-- Real-time dashboard updates
-- Task analytics charts
-- Mobile responsiveness improvements
-- Notifications for upcoming deadlines
-
----
-
-License
-
-This project is released under the MIT License.
-
----
-
-Author
-
-Created by Mukhesh
-
----
-
-Project Purpose
-
-This project demonstrates:
-
-- Full-stack PHP development
-- Database design and integration
-- AJAX-based UI interactions
-- Interactive dashboard and task management system
+</pre><hr><h2>Future Improvements</h2><ul>
+<li>Real-time dashboard updates</li>
+<li>Task analytics charts</li>
+<li>Mobile responsive improvements</li>
+<li>Notifications for upcoming deadlines</li>
+</ul><hr><h2>License</h2><p>
+This project is released under the <b>MIT License</b>.
+</p><hr><h2>Author</h2><p>
+Created by <b>Mukhesh</b>
+</p><hr><h2>Project Purpose</h2><p>This project demonstrates:</p><ul>
+<li>Full-stack PHP development</li>
+<li>Database design and integration</li>
+<li>AJAX-based UI interactions</li>
+<li>Interactive dashboard and task management system</li>
+</ul>
