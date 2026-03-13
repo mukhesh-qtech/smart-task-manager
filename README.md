@@ -79,6 +79,3 @@ The interface is designed using Tailwind CSS to provide a clean and responsive l
 **Hosting**
 - InfinityFree
 
----
-
-## 📂 Project Structure
