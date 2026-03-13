@@ -1,8 +1,8 @@
 <h1 align="center">Smart Academic Task Manager</h1><p align="center">
 A modern <b>PHP + MySQL web application</b> designed to help students manage assignments, deadlines, and academic tasks efficiently.
 </p><p align="center">
-Built with <b>PHP, MySQL, JavaScript, and Tailwind CSS</b>.
-Live link: <a>http://smarttaskmanager.infinityfreeapp.com</a>
+Built with <b>PHP, MySQL, JavaScript, and Tailwind CSS</b>.<br />
+Live link: (http://smarttaskmanager.infinityfreeapp.com)
 </p><hr><h2>Project Overview</h2><p>
 Smart Academic Task Manager is a full-stack productivity web application that allows students to track academic tasks, manage deadlines, and monitor progress through a modern dashboard interface.
 </p><p>
